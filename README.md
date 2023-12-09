@@ -263,20 +263,15 @@ npm start
 cd vgiws
 ```
 
-Na pasta settings, copie SAMPLE_db_settings.py para db_settings.py
-Preencha as variáveis conforme sua configuração
+Na pasta settings, faça uma cópia de SAMPLE_db_settings.py e altere o nome do arquivo para db_settings.py.
+
+Preencha as variáveis conforme sua configuração.
+
+Após isso, rode os comando a seguir no terminal para criar os containers do Docker (o Docker deve estar aberto para funcionar corretamente).
 
 ```
 docker build -t vgiws .
 docker run -d --name apivgiws -p 8888:8888 -e TZ=America/Sao_Paulo vgiws
-```
-
-#### GeocodingAPI
-
-```
-cd GeocodingAPI
-npm install
-npm start
 ```
 
 # Testes de Aceitação
