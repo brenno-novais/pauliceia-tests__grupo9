@@ -278,3 +278,8 @@ cd GeocodingAPI
 npm install
 npm start
 ```
+
+# Testes de Aceitação
+
+1. Estão localizados em pauliceia/features
+2. No terminal, na pasta pauliceia, digite 'cucumber' para rodar os testes
