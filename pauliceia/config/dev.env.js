@@ -9,6 +9,6 @@ module.exports = merge(prodEnv, {
   urlGeoserverPauliceia: '"http://localhost:8085/geoserver/pauliceia"',
   // urlGeoserverPauliceia: '"http://www.pauliceia.dpi.inpe.br/geoserver/pauliceia"',
   urlGeoserveOther: '"http://www.pauliceia.dpi.inpe.br/geoserver/other"',
-  urlGeocoding: '"http://www.pauliceia.dpi.inpe.br/api/geocoding"',
+  urlGeocoding: '"http://localhost:8888"',
   keyCripto: '"keytest"'
 })

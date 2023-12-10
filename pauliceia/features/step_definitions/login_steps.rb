@@ -21,13 +21,12 @@ And('Eu clico em "Entrar"') do
   sleep(8)
 end
 
-And('o login é bem-sucedido e eu sou redirecionado para a página inicial') do
+Then('o login é bem-sucedido e eu sou redirecionado para a página inicial') do
   expect(current_path).to eq('/portal/explore')
 end
 
-And('o login é negado e eu recebo um aviso de erro') do
+Then('o login é negado e eu recebo um aviso de erro') do
   expect(current_path).to eq('/portal/login')
   expect(page.has_css?('.el-message-box'))
   expect(find('span', text: 'ERROR'))
-
 end
