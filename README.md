@@ -1,3 +1,35 @@
+# Sumário
+
+1. [Integrantes](#integrantes)
+2. [Instruções de Instalação do Projeto Pauliceia](#instruções-de-instalação-do-projeto-pauliceia)
+   - [Pré-requisitos](#pré-requisitos)
+   - [Configuração do Ambiente](#configuração-do-ambiente)
+     - [Configurando Node.js](#configurando-nodejs)
+     - [Testes no Pauliceia](#testes-no-pauliceia)
+     - [Configurando PostgreSQL e PostGIS](#configurando-postgresql-e-postgis)
+     - [Configurando GeoServer](#configurando-geoserver)
+     - [Configurando Outros Componentes](#configurando-outros-componentes)
+       - [GeoServer REST](#geoserver-rest)
+       - [VGIWS](#vgiws)
+3. [Testes de Aceitação](#testes-de-aceitação)
+4. [Comentários sobre os Testes](#comentários-sobre-os-testes)
+
+# Integrantes
+
+Disciplina: Engenharia de Sistemas de Informação
+
+Professor: Dr. Daniel Cordeiro
+
+Grupo 9:
+
+- Brenno Andrade Novais - 11925086
+- Caio Hideki Yamamoto Toyama - 12608747
+- Guilherme Conte Mendes Batista - 11552657
+- João Vitor Vieira Topan - 12542950
+- Leonardo Monteiro Mello - 12542932
+
+> obs: Detalhes sobre os testes estão no final do README
+
 # Instruções de Instalação do Projeto Pauliceia
 
 Este guia passo a passo irá auxiliá-lo na configuração do ambiente para o projeto Pauliceia.
@@ -276,5 +308,9 @@ docker run -d --name apivgiws -p 8888:8888 -e TZ=America/Sao_Paulo vgiws
 
 # Testes de Aceitação
 
-1. Estão localizados em pauliceia/features
-2. No terminal, na pasta pauliceia, digite 'cucumber' para rodar os testes
+1. Pré-requisito: tenha o Chrome instalado;
+2. Os testes estão localizados em pauliceia/features;
+3. Monte o setup da pasta pauliceia e rode-a na porta 8080;
+   > Garanta que você não possui nada rodando na porta 8888 (é lá que o backend será mockado nos testes);
+4. Rode o "npm start" nessa pasta;
+5. Abra o terminal e rode o comando "cucumber".
