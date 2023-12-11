@@ -6,7 +6,6 @@ end
 
 When('Eu clico no botao {string}') do |botao|
   click_link(botao)
-  sleep(8)
 end
 
 Then('Eu sou redirecionado para a página {string}') do |pagina|
