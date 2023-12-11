@@ -120,7 +120,7 @@ CREATE TABLE pauliceia_user (
   is_curator BOOLEAN,
   receive_notification_by_email BOOLEAN,
   profile_text TEXT,
-  picture VARCHAR
+  picture VARCHAR,
   social_id TEXT,
   social_account TEXT
 );
