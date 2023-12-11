@@ -22,8 +22,8 @@ end
 
 Then('O conteúdo da página deve ser traduzido para {string}') do |lingua_traduzida|
   if(lingua_traduzida == "ingles")
-    expect(page).to have_content('Sign In')
+    expect(page).to have_content('Map')
   else
-    expect(page).to have_content('Entrar')
+    expect(page).to have_content('Mapa')
   end
 end
