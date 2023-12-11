@@ -11,10 +11,13 @@
      - [Configurando Outros Componentes](#configurando-outros-componentes)
        - [GeoServer REST](#geoserver-rest)
        - [VGIWS](#vgiws)
+       - [GeocodingAPI](#geocodingAPI)
 3. [Testes de Aceitação](#testes-de-aceitação)
 4. [Comentários sobre os Testes](#comentários-sobre-os-testes)
 
 # Integrantes
+
+Fonte: https://github.com/pauliceia
 
 Disciplina: Engenharia de Sistemas de Informação
 
@@ -28,7 +31,7 @@ Grupo 9:
 - João Vitor Vieira Topan - 12542950
 - Leonardo Monteiro Mello - 12542932
 
-> obs: Detalhes sobre os testes estão no final do README
+> obs: Detalhes sobre os testes estão no final do README. Para rodar os testes somente é necessário o setup da pasta **pauliceia**
 
 # Instruções de Instalação do Projeto Pauliceia
 
@@ -304,6 +307,14 @@ Após isso, rode os comando a seguir no terminal para criar os containers do Doc
 ```
 docker build -t vgiws .
 docker run -d --name apivgiws -p 8888:8888 -e TZ=America/Sao_Paulo vgiws
+```
+
+#### GeocodingAPI
+
+```
+cd GeocodingAPI
+npm install
+npm start
 ```
 
 # Testes de Aceitação
